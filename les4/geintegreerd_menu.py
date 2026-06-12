@@ -16,7 +16,7 @@ while True:
 
     # --- INPUTVALIDATIE MENU ---
     if not keuze.isdigit():
-        print("❌ Ongeldige invoer! Gebruik alleen cijfers.")
+        print(" Ongeldige invoer! Gebruik alleen cijfers.")
         continue
 
     # Zet om naar int
@@ -30,14 +30,14 @@ while True:
         if bedrag_input.replace('.', '', 1).isdigit():
             bedrag = float(bedrag_input)
         else:
-            print("❌ Ongeldige invoer! Bedrag wordt 0.")
+            print("Ongeldige invoer! Bedrag wordt 0.")
             bedrag = 0
 
         tarief_input = input("BTW-tarief (%): ")
         if tarief_input.replace('.', '', 1).isdigit():
             tarief = float(tarief_input)
         else:
-            print("❌ Ongeldige invoer! Tarief wordt 0%.")
+            print("Ongeldige invoer! Tarief wordt 0%.")
             tarief = 0
 
         btw = bedrag * tarief / 100
@@ -52,7 +52,7 @@ while True:
         if bedrag_input.replace('.', '', 1).isdigit():
             totaalbedrag = float(bedrag_input)
         else:
-            print("❌ Ongeldige invoer! Orderbedrag wordt 0.")
+            print("Ongeldige invoer! Orderbedrag wordt 0.")
             totaalbedrag = 0
 
         klant = input("Type klant (Standaard / Zilver / Goud): ").lower()
@@ -92,38 +92,38 @@ while True:
         if wind_input.replace('.', '', 1).isdigit():
             wind = float(wind_input)
         else:
-            print("❌ Ongeldige invoer! Windsnelheid wordt 0.")
+            print("Ongeldige invoer! Windsnelheid wordt 0.")
             wind = 0
 
         if wind > 60:
-            print("❌ CRITIEK GEVAAR: Stoppen!")
+            print("CRITIEK GEVAAR: Stoppen!")
         elif wind > 30:
             netten = input("Zijn de netten gemonteerd? (ja/nee): ")
             if netten.lower() == "ja":
-                print("⚠️ Werken toegestaan, maar voorzichtig.")
+                print("Werken toegestaan, maar voorzichtig.")
             else:
-                print("❌ VERBODEN zonder netten!")
+                print("VERBODEN zonder netten!")
         else:
             regen = input("Hevige regen of ijzel? (ja/nee): ")
             if regen.lower() == "ja":
-                print("⚠️ Gladheid! Antislip verplicht.")
+                print("ladheid! Antislip verplicht.")
             else:
-                print("✅ Veilig om te werken.")
+                print("Veilig om te werken.")
 
         print("\n--- EXTRA CONTROLE TORENKRAAN ---")
         hoogte_input = input("Kraanmast hoogte (m): ")
         if hoogte_input.replace('.', '', 1).isdigit():
             hoogte = float(hoogte_input)
         else:
-            print("❌ Ongeldige invoer! Hoogte wordt 0.")
+            print("Ongeldige invoer! Hoogte wordt 0.")
             hoogte = 0
 
         if wind > 45 and hoogte > 20:
-            print("❌ KRAAN VERBODEN!")
+            print("KRAAN VERBODEN!")
         elif wind > 55 or hoogte > 40:
-            print("⚠️ Alleen gecertificeerde masters!")
+            print("Alleen gecertificeerde masters!")
         else:
-            print("✅ Kraan veilig.")
+            print("Kraan veilig.")
 
     # --- OPTIE 4: AFSLUITEN ---
     elif keuze == 4:
@@ -132,7 +132,7 @@ while True:
 
     # --- FOUTIEVE KEUZE ---
     else:
-        print("❌ Ongeldige keuze! Kies 1 t/m 4.")
+        print("Ongeldige keuze! Kies 1 t/m 4.")
 # geintegreerd_menu.py – gemaakt door Rabbi
 
 while True:
@@ -149,7 +149,7 @@ while True:
 
     # --- INPUTVALIDATIE MENU ---
     if not keuze.isdigit():
-        print("❌ Ongeldige invoer! Gebruik alleen cijfers.")
+        print("Ongeldige invoer! Gebruik alleen cijfers.")
         continue
 
     # Zet om naar int
@@ -163,14 +163,14 @@ while True:
         if bedrag_input.replace('.', '', 1).isdigit():
             bedrag = float(bedrag_input)
         else:
-            print("❌ Ongeldige invoer! Bedrag wordt 0.")
+            print("Ongeldige invoer! Bedrag wordt 0.")
             bedrag = 0
 
         tarief_input = input("BTW-tarief (%): ")
         if tarief_input.replace('.', '', 1).isdigit():
             tarief = float(tarief_input)
         else:
-            print("❌ Ongeldige invoer! Tarief wordt 0%.")
+            print("Ongeldige invoer! Tarief wordt 0%.")
             tarief = 0
 
         btw = bedrag * tarief / 100
@@ -185,7 +185,7 @@ while True:
         if bedrag_input.replace('.', '', 1).isdigit():
             totaalbedrag = float(bedrag_input)
         else:
-            print("❌ Ongeldige invoer! Orderbedrag wordt 0.")
+            print("Ongeldige invoer! Orderbedrag wordt 0.")
             totaalbedrag = 0
 
         klant = input("Type klant (Standaard / Zilver / Goud): ").lower()
@@ -225,38 +225,38 @@ while True:
         if wind_input.replace('.', '', 1).isdigit():
             wind = float(wind_input)
         else:
-            print("❌ Ongeldige invoer! Windsnelheid wordt 0.")
+            print("Ongeldige invoer! Windsnelheid wordt 0.")
             wind = 0
 
         if wind > 60:
-            print("❌ CRITIEK GEVAAR: Stoppen!")
+            print("CRITIEK GEVAAR: Stoppen!")
         elif wind > 30:
             netten = input("Zijn de netten gemonteerd? (ja/nee): ")
             if netten.lower() == "ja":
                 print("⚠️ Werken toegestaan, maar voorzichtig.")
             else:
-                print("❌ VERBODEN zonder netten!")
+                print("VERBODEN zonder netten!")
         else:
             regen = input("Hevige regen of ijzel? (ja/nee): ")
             if regen.lower() == "ja":
-                print("⚠️ Gladheid! Antislip verplicht.")
+                print("Gladheid! Antislip verplicht.")
             else:
-                print("✅ Veilig om te werken.")
+                print("Veilig om te werken.")
 
         print("\n--- EXTRA CONTROLE TORENKRAAN ---")
         hoogte_input = input("Kraanmast hoogte (m): ")
         if hoogte_input.replace('.', '', 1).isdigit():
             hoogte = float(hoogte_input)
         else:
-            print("❌ Ongeldige invoer! Hoogte wordt 0.")
+            print("Ongeldige invoer! Hoogte wordt 0.")
             hoogte = 0
 
         if wind > 45 and hoogte > 20:
-            print("❌ KRAAN VERBODEN!")
+            print("KRAAN VERBODEN!")
         elif wind > 55 or hoogte > 40:
-            print("⚠️ Alleen gecertificeerde masters!")
+            print("Alleen gecertificeerde masters!")
         else:
-            print("✅ Kraan veilig.")
+            print("Kraan veilig.")
 
     # --- OPTIE 4: AFSLUITEN ---
     elif keuze == 4:
@@ -265,4 +265,4 @@ while True:
 
     # --- FOUTIEVE KEUZE ---
     else:
-        print("❌ Ongeldige keuze! Kies 1 t/m 4.")
+        print("Ongeldige keuze! Kies 1 t/m 4.")
