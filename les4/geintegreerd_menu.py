@@ -233,7 +233,7 @@ while True:
         elif wind > 30:
             netten = input("Zijn de netten gemonteerd? (ja/nee): ")
             if netten.lower() == "ja":
-                print("⚠️ Werken toegestaan, maar voorzichtig.")
+                print("Werken toegestaan, maar voorzichtig.")
             else:
                 print("VERBODEN zonder netten!")
         else:
