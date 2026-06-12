@@ -1,0 +1,5 @@
+# werf_veiligheid.py – gemaakt door Kris Dierickx
+print("=" * 45)
+print("     Veiligheids-Assistent PrimaBouw BV")
+print("=" * 45)
+
